@@ -1,0 +1,9 @@
+.env
+.server
+.next
+node_modules
+*.log
+storybook-static
+.yalc
+yalc.lo
+.DS_Store

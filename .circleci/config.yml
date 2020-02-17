@@ -1,0 +1,70 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/app
+  docker:
+    - image: circleci/node:12.13.0
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v{{ .Environment.CACHE_VERSION }}-dependencies-{{ checksum "package-lock.json" }}
+            - v{{ .Environment.CACHE_VERSION }}-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v{{ .Environment.CACHE_VERSION }}-dependencies-{{ checksum "package-lock.json" }}
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/app
+
+      - run: npm run lint
+
+  storybook:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/app
+
+      - run: npm run storybook:build
+
+      - run:
+          name: Deploy Storybook to Surge
+          command: npm run storybook:deploy
+
+      - run:
+          name: Comment Storybook url in PR
+          command: ./scripts/comment-in-pr.sh
+
+workflows:
+  version: 2
+  build-deploy-test:
+    jobs:
+      - build
+
+      - test:
+          requires:
+            - build
+
+      - storybook:
+          requires:
+            - test
