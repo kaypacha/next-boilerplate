@@ -41,7 +41,8 @@
     "eslint-plugin-react": "^7.18.3",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "surge": "^0.21.3"
   },
   "husky": {
     "hooks": {
