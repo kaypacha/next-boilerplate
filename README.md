@@ -10,7 +10,7 @@
 # :notebook: Next Boilerplate
 #### by Kay Pacha
 
-Next.js - Styled-Components - Storybook - CircleCI - Eslint - Prettier boilerplate 🚀
+Next.js - Styled-Components - Storybook - CircleCI - Eslint - Prettier boilerplate
 
 ## Getting Started
 
@@ -38,6 +38,9 @@ npm i
 Now you have all devDependencies and dependencies the project need.
 
 ## Run the project
+
+Put your own account on ```CODEOWNERS``` file inside ```.github``` folder.
+You can edit or delete the config of ```.circleci``` in case you want your own configuration or you don't want it one
 
 **For development run** 
 
