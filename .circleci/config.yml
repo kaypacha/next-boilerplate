@@ -53,7 +53,7 @@ jobs:
 
       - run:
           name: Comment Storybook url in PR
-          command: ./scripts/comment-in-pr.sh
+          command: bash ./scripts/comment-in-pr.sh
 
 workflows:
   version: 2
