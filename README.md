@@ -12,7 +12,7 @@
 
 Next.js - Styled-Components - Storybook - CircleCI - Eslint - Prettier boilerplate
 
-## Getting Started
+## :tada: Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for start your project.
 
@@ -85,6 +85,6 @@ Joaquin | Cristian | Pablo |
 ------------ | ----------- | ------------ |
 [<img src="https://avatars0.githubusercontent.com/u/19353687?s=400&v=4" width="70" height="70" />](https://github.com/ByeBye-Sama) | [<img src="https://avatars0.githubusercontent.com/u/8507974?s=400&v=4" width="70" height="70" />](https://github.com/cristianbgp) | [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="70" height="70" />](https://github.com/pablotamariz) |
 
-## License
+## :bookmark_tabs: License
 
 [MIT](https://github.com/kaypacha/next-boilerplate/blob/master/LICENSE)
