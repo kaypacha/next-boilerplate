@@ -37,7 +37,7 @@ npm i
 
 Now you have all devDependencies and dependencies the project need.
 
-## Run the project
+## :running: Run the project
 
 Put your own account on ```CODEOWNERS``` file inside ```.github``` folder.
 You can edit or delete the config of ```.circleci``` in case you want your own configuration or you don't want it one
@@ -58,7 +58,7 @@ npm run storybook
 
 **For other util commands** to development or production check on the ```package.json```
 
-## Deploy Storybook on surge.sh with CircleCI
+## :nail_care: Deploy Storybook on surge.sh with CircleCI
 ### And generate comment with a link of the deploy on PRs
 
 For this process you need to set 3 environment variables on CircleCI
@@ -68,18 +68,18 @@ SURGE_LOGIN
 SURGE_TOKEN
 GITHUB_TOKEN
 ```
-#### SURGE_LOGIN & SURGE_TOKEN
+##### SURGE_LOGIN & SURGE_TOKEN
 For this you need to have an account on surge.sh and get that 2 variables for there.
-The first steps of this [https://surge.sh/help/integrating-with-circleci](link) will help you.
+The first steps of this [link](https://surge.sh/help/integrating-with-circleci) will help you.
 
-#### GITHUB_TOKEN
+##### GITHUB_TOKEN
 This is for the account you want to comment with the link of the storybook deploy.
-You can follow this [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](link) for help
+You can follow this [link](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for help
 
-#### CUSTOMIZATION
-You can modify variables, add more, modify the content of the comment on ```./.circleci/config.yml```
+##### CUSTOMIZATION
+You can modify variables, add more, modify the content of the comment on ```.circleci/config.yml```
 
-## Kay Pacha team
+## :rat: Kay Pacha team
 
 Joaquin | Cristian | Pablo |
 ------------ | ----------- | ------------ |
