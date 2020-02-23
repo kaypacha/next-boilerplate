@@ -39,8 +39,8 @@ Now you have all devDependencies and dependencies the project need.
 
 ## :running: Run the project
 
-Put your own account on ```CODEOWNERS``` file inside ```.github``` folder.
-You can edit or delete the config of ```.circleci``` in case you want your own configuration or you don't want it one
+Put your github account on ```CODEOWNERS``` file inside ```.github``` folder.
+You can edit or delete the config of ```./.circleci``` & ````./scripts``` in case you want your own configuration or you don't want it one
 
 **For development run** 
 
@@ -55,6 +55,8 @@ Server will run on http://localhost:3000/
 ```bash
 npm run storybook
 ```
+
+**For eslint** remember to modify, delete or add your rules on the ```package.json```
 
 **For other util commands** to development or production check on the ```package.json```
 
@@ -77,7 +79,7 @@ This is for the account you want to comment with the link of the storybook deplo
 You can follow this [link](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for help
 
 ##### CUSTOMIZATION
-You can modify variables, add more, modify the content of the comment on ```.circleci/config.yml```
+You can modify variables, add more, modify the content of the comment on ```scripts/comment-in-pr.sh```
 
 ## :rat: Kay Pacha team
 
