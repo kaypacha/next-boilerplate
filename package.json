@@ -67,6 +67,7 @@
     "parser": "babel-eslint",
     "rules": {
       "no-unused-vars": "error",
+      "react/prop-types": "off",
       "react/self-closing-comp": "error",
       "no-var": "error"
     },
