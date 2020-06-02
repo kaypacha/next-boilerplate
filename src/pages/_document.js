@@ -44,7 +44,7 @@ class KayPachaDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://res.cloudinary.com/kay-pacha/v1581653839/web-resources/favicon_su4xsj.png"
+            href="https://res.cloudinary.com/kaypacha/v1581653839/web-resources/favicon_su4xsj.png"
           />
           {this.props.styleTags}
         </Head>
