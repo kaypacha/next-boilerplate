@@ -8,7 +8,7 @@
 </div>
 
 # :notebook: Next Boilerplate
-#### by Kay Pacha
+### by Kay Pacha
 
 Next.js - Styled-Components - Storybook - CircleCI - Eslint - Prettier boilerplate
 
@@ -40,7 +40,7 @@ Now you have all devDependencies and dependencies the project need.
 ## :running: Run the project
 
 Put your github account on ```CODEOWNERS``` file inside ```.github``` folder.
-You can edit or delete the config of ```./.circleci``` & ````./scripts``` in case you want your own configuration or you don't want it one
+You can edit or delete the config of ```./.circleci``` & ```./scripts``` in case you want your own configuration or you don't want it one
 
 **For development run** 
 
@@ -61,7 +61,7 @@ npm run storybook
 **For other util commands** to development or production check on the ```package.json```
 
 ## :nail_care: Deploy Storybook on surge.sh with CircleCI
-### And generate comment with a link of the deploy on PRs
+### Make an automatic comment with a link of the deploy on PRs
 
 For this process you need to set 3 environment variables on CircleCI
 
