@@ -1,0 +1,91 @@
+{
+  "name": "next-boilerplate",
+  "version": "1.0.0",
+  "description": "next boilerplate created by Kay Pacha",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npx eslint src/",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "storybook:deploy": "surge ./storybook-static -d ${GITHUB_REPOSITORY#*/}-${GITHUB_HEAD_REF}.surge.sh --token $SURGE_TOKEN"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaypacha/next-boilerplate.git"
+  },
+  "author": "Kay Pacha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaypacha/next-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kaypacha/next-boilerplate#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^4.3.8",
+    "jest": "^27.4.5",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "react-test-renderer": "^17.0.2",
+    "surge": "^0.23.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "no-unused-vars": "error",
+      "react/prop-types": "off",
+      "react/self-closing-comp": "error",
+      "no-var": "error"
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}
