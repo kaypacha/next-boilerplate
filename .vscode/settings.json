@@ -1,7 +1,0 @@
-{
-  "editor.rulers": [80],
-  "files.exclude": {
-    ".next": true,
-    ".server": true
-  }
-}
