@@ -10,7 +10,7 @@
 # :notebook: Next Boilerplate
 ### by Kay Pacha
 
-Nextjs - Styled-Components - Storybook - Jest|testing-library - Github Actions - Eslint - Prettier -  boilerplate
+Nextjs - Styled-Components - Storybook - Jest | testing-library - Github Actions - Eslint - Prettier -  boilerplate
 
 ## :tada: Getting Started
 
