@@ -27,7 +27,7 @@ npm (Node Package Manager)
 ### Installing
 
 How to start your project:
-Use as a template | Download | Pull | Fork this repo.
+**Use as a template (recommended)** | Download | Pull | Fork this repo.
 
 Then install dependencies.
 
