@@ -85,7 +85,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix"
+      "eslint --fix",
+      "jest --bail --findRelatedTests --coverage --env=jsdom"
     ]
   }
 }
