@@ -71,7 +71,8 @@
       "no-unused-vars": 1,
       "react/prop-types": "off",
       "react/self-closing-comp": "error",
-      "no-var": "error"
+      "no-var": "error",
+      "import/no-anonymous-default-export": "off"
     },
     "parserOptions": {
       "sourceType": "module",
