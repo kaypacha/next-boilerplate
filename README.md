@@ -7,10 +7,10 @@
 
 </div>
 
-# :notebook: Next Boilerplate
+# :notebook: NextJs SWC Boilerplate
 ### by Kay Pacha
 
-Nextjs - Styled-Components - Storybook - Jest | testing-library - Github Actions - Eslint - Prettier -  boilerplate
+Nextjs - Styled-Components - SWC - Jest | testing-library - Storybook - Github Actions - Eslint - Prettier -  boilerplate
 
 ## :tada: Getting Started
 
