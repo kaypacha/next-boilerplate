@@ -10,7 +10,7 @@
 # :notebook: NextJs SWC Boilerplate
 ### by Kay Pacha
 
-Nextjs - Styled-Components - SWC - Jest | testing-library - Storybook - Github Actions - Eslint - Prettier -  boilerplate
+Nextjs - Styled-Components - SWC - Jest | testing-library - Storybook - Github Actions - Eslint - Prettier
 
 ## :tada: Getting Started
 
