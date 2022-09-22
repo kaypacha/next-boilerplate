@@ -84,7 +84,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "**/*.+(js|ts|tsx)": [
       "eslint '**/*.{js,ts,tsx}'",
       "prettier --write '**/*.{js,ts,tsx}'",
       "jest --watchAll=false --coverage --forceExit --detectOpenHandles --env=jsdom"
