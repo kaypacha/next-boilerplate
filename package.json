@@ -26,17 +26,18 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "next": "^12.1.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/react": "^6.4.9",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.4.3",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.3.0",
@@ -47,8 +48,7 @@
     "jest": "^27.4.5",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
-    "react-test-renderer": "^17.0.2",
-    "surge": "^0.23.0"
+    "surge": "^0.9.0"
   },
   "prettier": {
     "semi": false,
@@ -71,8 +71,7 @@
       "no-unused-vars": 1,
       "react/prop-types": "off",
       "react/self-closing-comp": "error",
-      "no-var": "error",
-      "import/no-anonymous-default-export": "off"
+      "no-var": "error"
     },
     "parserOptions": {
       "sourceType": "module",
@@ -85,9 +84,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "jest --bail --findRelatedTests --coverage --env=jsdom"
+    "**/*.+(js|ts|tsx)": [
+      "eslint '**/*.{js,ts,tsx}'",
+      "prettier --write '**/*.{js,ts,tsx}'",
+      "jest --watchAll=false --coverage --forceExit --detectOpenHandles --env=jsdom"
     ]
   }
 }
