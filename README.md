@@ -61,8 +61,6 @@ npm run storybook
 npm run test
 ```
 
-**For eslint** remember to modify, delete or add your rules on the `package.json`
-
 **For other util commands** to development or production check on the `package.json`
 
 ## :rat: Kay Pacha team
