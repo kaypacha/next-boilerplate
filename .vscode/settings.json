@@ -1,0 +1,10 @@
+{
+  // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
+  "editor.formatOnSave": true,
+  // Controls whether prettier is enabled or not.
+  "prettier.enable": true,
+  // Eslint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}

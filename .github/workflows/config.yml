@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14.17.0
+          node-version: 18.17.0
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -46,7 +46,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14.17.0
+          node-version: 18.17.0
 
       - name: Load node_modules
         uses: actions/cache@v2
@@ -71,7 +71,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14.17.0
+          node-version: 18.17.0
 
       - name: Load node_modules
         uses: actions/cache@v2
@@ -85,39 +85,3 @@ jobs:
 
       - name: Run tests
         run: npm run test
-
-  storybook:
-    needs: [build, lint, test]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.17.0
-
-      - name: Load node_modules
-        uses: actions/cache@v2
-        id: cache-packages
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Storybook
-        run: npm run storybook:build
-
-      - name: Deploy Storybook to Surge
-        env:
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: npm run storybook:deploy "$SURGE_TOKEN"
-
-      - name: Comment Storybook url in PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: bash -eux ./scripts/comment-in-pr.sh --ref "${GITHUB_TOKEN}" "${PR_NUMBER}"

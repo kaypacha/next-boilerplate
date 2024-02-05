@@ -1,9 +1,11 @@
-import React from 'react'
-import Text from './index'
+import { Text } from 'components'
 
 export default {
   title: 'Text',
   component: Text,
+  args: {
+    children: 'Hello World',
+  },
   argTypes: {
     color: {
       options: ['primary', 'secondary', 'black', 'white'],
@@ -20,11 +22,10 @@ export default {
   },
 }
 
-const Template = args => <Text {...args}>Placeholder</Text>
-
-export const Primary = Template.bind({})
-Primary.args = {
-  textStyle: 'h1',
-  textAlign: 'center',
-  color: 'primary',
+export const Primary = {
+  args: {
+    textStyle: 'h1',
+    textAlign: 'center',
+    color: 'primary',
+  },
 }

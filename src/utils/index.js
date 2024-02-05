@@ -1,1 +1,1 @@
-export { default as reset } from './resetCss'
+export * from './reset-css'

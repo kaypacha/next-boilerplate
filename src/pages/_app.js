@@ -1,5 +1,6 @@
-import React from 'react'
+/* eslint-disable filename-rules/match */
 import { createGlobalStyle } from 'styled-components'
+
 import { reset } from 'utils'
 
 const GlobalStyle = createGlobalStyle`

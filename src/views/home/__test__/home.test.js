@@ -1,6 +1,5 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { HomeScreen } from '../src/views'
+import { HomeScreen } from 'views'
 
 describe('Text', () => {
   it('renders a text inside Home', () => {

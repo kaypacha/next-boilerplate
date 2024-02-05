@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-const reset = css`
+export const reset = css`
   /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -138,5 +138,3 @@ const reset = css`
     border-spacing: 0;
   }
 `
-
-export default reset

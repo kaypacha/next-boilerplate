@@ -1,0 +1,5 @@
+**/*.stories.js
+**/*.stories.jsx
+**/*.scss
+dist/
+.eslintrc.js
