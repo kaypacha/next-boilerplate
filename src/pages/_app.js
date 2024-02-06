@@ -1,7 +1,8 @@
 /* eslint-disable filename-rules/match */
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import { reset } from 'utils'
+import { theme } from 'theme'
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -11,7 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

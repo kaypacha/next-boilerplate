@@ -1,19 +1,20 @@
-import styled from 'styled-components'
-import { theme } from 'theme'
+import styled, { css } from 'styled-components'
 
 import { Text } from 'components'
 
-export const Main = styled.main`
-  align-items: center;
-  background-color: ${theme.colors.black};
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+export const Main = styled('main')`
+  ${({ theme }) => css`
+    align-items: center;
+    background-color: ${theme.colors.black};
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
 
-  > :not(:last-child) {
-    margin-bottom: ${theme.spacing(2)};
-  }
+    > :not(:last-child) {
+      margin-bottom: ${({ theme }) => theme.spacing(2)};
+    }
+  `}
 `
 
 export const DefaultLayout = props => {

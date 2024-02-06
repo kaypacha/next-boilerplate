@@ -1,14 +1,13 @@
-import styled from 'styled-components'
-import { theme } from 'theme'
+import styled, { css } from 'styled-components'
 
 const resolveColor = props => {
-  const { color } = props
+  const { color, theme } = props
 
   return theme.colors[color || 'black']
 }
 
 const resolveTextStyle = props => {
-  const { textStyle } = props
+  const { textStyle, theme } = props
 
   return theme.textStyle(textStyle || 'body1')
 }
@@ -27,12 +26,14 @@ const resolveTextAlign = props => {
 }
 
 export const Text = styled('span').withConfig({
-  shouldForwardProp: prop => prop !== 'textStyle',
+  shouldForwardProp: prop => prop !== 'textStyle' && prop !== 'color',
 })`
-  color: ${resolveColor};
-  display: inline-block;
-  text-decoration: none;
+  ${() => css`
+    color: ${resolveColor};
+    display: inline-block;
+    text-decoration: none;
 
-  ${resolveTextAlign}
-  ${resolveTextStyle}
+    ${resolveTextAlign}
+    ${resolveTextStyle}
+  `}
 `

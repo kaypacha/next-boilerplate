@@ -1,4 +1,4 @@
-const modules = ['tests', 'contexts', 'hooks', 'components', 'helpers', 'static', 'utils', 'pages']
+const modules = ['tests', 'hooks', 'components', 'static', 'utils', 'pages', 'theme', 'views']
 const assets = ['^.+\\.css$', '^assets', '^static', '^public']
 
 const dependencies = [
@@ -105,6 +105,7 @@ module.exports = {
       },
     ],
     'no-restricted-exports': 'off',
+    'no-unused-vars': 'warn',
     'import/prefer-default-export': 'off',
     // Filename rules
     'filename-rules/match': [2, 'kebab-case', '^(?!_app|_document)'],
