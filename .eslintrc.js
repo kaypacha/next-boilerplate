@@ -108,7 +108,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'import/prefer-default-export': 'off',
     // Filename rules
-    'filename-rules/match': [2, 'kebab-case', '^(?!_app|_document)'],
+    'filename-rules/match': [2, 'kebab-case'],
     // React eslint
     'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',
