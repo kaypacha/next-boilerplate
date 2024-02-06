@@ -26,7 +26,7 @@ const resolveTextAlign = props => {
 }
 
 export const Text = styled('span').withConfig({
-  shouldForwardProp: prop => prop !== 'textStyle',
+  shouldForwardProp: prop => prop !== 'textStyle' && prop !== 'color',
 })`
   ${() => css`
     color: ${resolveColor};
