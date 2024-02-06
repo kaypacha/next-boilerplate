@@ -12,7 +12,7 @@ export const Main = styled('main')`
     justify-content: center;
 
     > :not(:last-child) {
-      margin-bottom: ${({ theme }) => theme.spacing(2)};
+      margin-bottom: ${theme.spacing(2)};
     }
   `}
 `
