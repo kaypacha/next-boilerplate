@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders a text inside Home 1`] = `
+<div>
+  <main
+    class="sc-8ba3208c-0 eznmQb"
+    id="main"
+  >
+    <span
+      class="sc-43f57a72-0 bpNDKf"
+      color="white"
+    >
+      Boilerplate by KayPacha
+    </span>
+    <span
+      class="sc-43f57a72-0 eWlovP"
+      color="white"
+    >
+      Next is working
+    </span>
+  </main>
+</div>
+`;
