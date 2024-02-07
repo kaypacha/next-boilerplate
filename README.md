@@ -13,6 +13,11 @@
 
 Nextjs - Styled-Components - SWC - Jest | testing-library - Storybook - Github Actions - Eslint - Prettier
 
+```diff
+! YOU WANT TYPESCRIPT? USE THE LINK BELOW INSTEAD
+```
+[NextJs Typescript SWC Boilerplate](https://github.com/kaypacha/next-typescript-template)
+
 ## :tada: Getting Started
 
 These instructions will get you a comfy and solid start for your project.
